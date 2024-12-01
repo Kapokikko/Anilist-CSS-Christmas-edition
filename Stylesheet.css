@@ -452,7 +452,7 @@ h2 {
     color: rgb(190, 160, 220) !important; /* New color for Comedy amount text */
 }
 
-.percentage-bar .percentage.Comedy[style*="background: rgb(2, 169, 255);"] {
+.percentage-bar .percentage.Comedy[style*="background: rgb(146, 86, 243);"] {
     background-color: rgb(190, 160, 220) !important; /* New color for Comedy percentage bar */
 }
 
@@ -465,7 +465,7 @@ h2 {
     color: rgb(155, 145, 210) !important; /* New color for Romance amount text */
 }
 
-.percentage-bar .percentage.Romance[style*="background: rgb(146, 86, 243);"] {
+.percentage-bar .percentage.Romance[style*="background: rgb(2, 169, 255);"] {
     background-color: rgb(115, 105, 170) !important; /* New color for Romance percentage bar */
 }
 
