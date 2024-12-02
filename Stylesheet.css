@@ -1,25 +1,25 @@
 body {
-    position: relative; /* Establish a stacking context for body */
+    position: relative;
     background-color: transparent !important;
     background-image: url('https://i.imgur.com/mslEvz3.jpeg') !important;
     background-size: cover !important;
     background-repeat: no-repeat !important; 
     background-position: center center !important; 
     background-attachment: fixed !important;
-    z-index: 0; /* Base layer for the body */
+    z-index: 0;
 }
 
 body::before {
     content: "";
-    position: fixed; /* Fixed position ensures it's not affected by scrolling */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanY4amd1aG5yZXRhdGxodDY3Z2x5cTZocHR6Mnc1dzlncml6azdjYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1xmm0jsVFYxdDYRzCB/giphy.webp') no-repeat center center;
-    background-size: cover; /* Scale the snow GIF to cover the screen */
-    pointer-events: none; /* Allow clicks to pass through */
-    z-index: -1; /* Place the snow behind all body content */
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
     opacity: 0.5;
 }
 .banner:not(.review-card > .banner) {
@@ -44,7 +44,7 @@ body::before {
 .favourite[style*="https://s4.anilist.co/file/anilistcdn/character/large/b149589-dC9wt4beVBUU.png"]::before,
 .favourite[style*="https://s4.anilist.co/file/anilistcdn/character/large/b149594-BuEcMmYcFkIX.png"]::before {
     content: '';
-    background-image: url('https://media.baamboozle.com/uploads/images/13080/1682094842_37065_gif-url.gif'); /* Overlay image */
+    background-image: url('https://media.baamboozle.com/uploads/images/13080/1682094842_37065_gif-url.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -63,7 +63,7 @@ body::before {
 .favourite[style*="https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112275-fh0u5cH2qB5b.jpg"]:hover::before,
 .favourite[style*="https://s4.anilist.co/file/anilistcdn/character/large/b149589-dC9wt4beVBUU.png"]:hover::before,
 .favourite[style*="https://s4.anilist.co/file/anilistcdn/character/large/b149594-BuEcMmYcFkIX.png"]:hover::before {
-    opacity: 1; /* Show the overlay on hover */
+    opacity: 1;
 }
 
 * {
@@ -101,22 +101,20 @@ body::before {
    background-color: rgba(50, 30, 76, 0.85);
 }
 .about .content-wrap[data-v-5c30286e] {
-   position: relative; /* This must be applied always, not just on hover */
-   transition: background 0.3s ease-in-out; /* Smooth transition on hover */
+   position: relative;
+   transition: background 0.3s ease-in-out;
 }
 
-/* Apply styles to the container when hovered */
 .about .content-wrap[data-v-5c30286e]:hover {
-   background-color: rgba(50, 30, 76, 0.9); /* Background color with opacity */
+   background-color: rgba(50, 30, 76, 0.9);
 }
 
-/* The image is added as a pseudo-element */
 .about .content-wrap[data-v-5c30286e]::after {
     content: '';
     position: absolute;
-    bottom: 0; /* Align to the bottom of the container */
-    left: 50%; /* Align the left edge of the image to the center of the container */
-    transform: translateX(-50%); /* Center the image horizontally */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100px;
     height: 100px;
     background-image: url('https://i.pinimg.com/originals/ed/dc/6c/eddc6c4aa87b4042215b4936e22d1029.gif');
@@ -128,7 +126,7 @@ body::before {
     transition: opacity 0.3s ease-in-out;
 }
 .about .content-wrap[data-v-5c30286e]:hover::after {
-    opacity: 0.5; /* On hover, set opacity to 0.5 to make the image visible */
+    opacity: 0.5;
 }
 .wrap[data-v-04d66030] {
     background-color: rgba(50, 30, 76, 0.8) !important;
@@ -138,46 +136,44 @@ body::before {
     background-color: rgba(50, 30, 76, 0.9) !important;
 }
 a[href="/manga/30912/Tomie/"].cover::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position relative to the parent element */
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://i.pinimg.com/originals/51/7a/86/517a86be65e2c862e73e1ecd18a85627.gif'); /* Overlay image */
-    background-size: cover; /* Make the overlay image cover the entire area */
-    background-position: center; /* Center the overlay image */
+    background-image: url('https://i.pinimg.com/originals/51/7a/86/517a86be65e2c862e73e1ecd18a85627.gif');
+    background-size: cover;
+    background-position: center;
     filter: grayscale(100%);
     mix-blend-mode: screen;
     opacity: 0.3;
-    transition: opacity 0.5s ease; /* Smooth transition for hover effect */
-    z-index: 1; /* Ensure it sits on top of the original image */
+    transition: opacity 0.5s ease;
+    z-index: 1;
     pointer-events: none;
 }
 
-/* On hover, hide the overlay to reveal the original background image */
 a[href="/manga/30912/Tomie/"].cover:hover::before {
     opacity: 0.05;
 }
 a[href="/anime/111314/Uzumaki/"].cover::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position relative to the parent element */
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url('https://64.media.tumblr.com/02b7065fb905477740d413c449993514/0362d5a22c6a010c-2d/s640x960/ab70a17ea5eb2565fa9980c6445a20080f861884.gif'); /* Overlay image */
-    background-size: cover; /* Make the overlay image cover the entire area */
-    background-position: center; /* Center the overlay image */
+    background-size: cover;
+    background-position: center;
     filter: grayscale(100%);
     mix-blend-mode: screen;
     opacity: 0.3;
-    transition: opacity 0.5s ease; /* Smooth transition for hover effect */
-    z-index: 1; /* Ensure it sits on top of the original image */
+    transition: opacity 0.5s ease;
+    z-index: 1;
     pointer-events: none;
 }
 
-/* On hover, hide the overlay to reveal the original background image */
 a[href="/anime/111314/Uzumaki/"].cover:hover::before {
     opacity: 0.05;
 }
@@ -290,9 +286,9 @@ h2 {
 }
 
 .nav-wrap {
-    position: relative; /* Ensure the shadow doesn't affect the layout */
-    display: flex; /* To align the links horizontally */
-    justify-content: center; /* Center the links */
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .nav-wrap::before {
     content: '';
@@ -302,34 +298,34 @@ h2 {
     transform: translate(-50%, -50%);
     opacity: 0.8;
     width: 100%;
-    height: 60px; /* Adjust height based on the size of the nav bar */
+    height: 60px;
     background: radial-gradient(
         ellipse at center, 
-        rgba(50, 0, 60, 0.5), /* Dark purple center */
-        rgba(50, 0, 60, 0.0) 35% /* Fades out towards the edges */
+        rgba(50, 0, 60, 0.5),
+        rgba(50, 0, 60, 0.0) 35% 
     );
-    z-index: -1; /* Ensure the shadow is behind the content */
-    border-radius: 30px; /* Make the ends more rounded and faded */
-    pointer-events: none; /* Prevent the shadow from affecting interactions */
+    z-index: -1;
+    border-radius: 30px;
+    pointer-events: none;
 }
-/* General styles for all navigation links */
+
 .nav-wrap .link {
     display: inline-block;
-    height: auto; /* Adjust height based on your image size */
-    width: 60px; /* Adjust width based on your image size */
+    height: auto; 
+    width: 60px; 
     background-size: contain;
     background-repeat: no-repeat;
-    text-indent: -9999px; /* Hide the original text */
-    overflow: hidden; /* Ensure the text doesn't show */
-    border: none; /* Remove any borders */
-    margin-right: 10px; /* Space between icons */
+    text-indent: -9999px; 
+    overflow: hidden; 
+    border: none; 
+    margin-right: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     justify-content: center;
     filter: hue-rotate(-20deg) brightness(85%);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Specific styles for each link based on their order */
+/* Specific styles for each link */
 
 /* Overview */
 .nav-wrap .link:nth-child(1) {
@@ -374,7 +370,7 @@ h2 {
     width: 50px; 
 }
 .nav-wrap .link:hover {
-    filter: none; /* Example hover effect to brighten the icon */
+    filter: none;
     transform: scale(1.09);
 }
 
@@ -536,56 +532,58 @@ h2 {
 .user-page-unscoped.purple .progress .bar {
     background: rgba(80, 0, 30, 0.7);
 }
-/* Custom avatar for user 'lewka' */
+/*avatar for lewka */
 a[href="/user/lewka/"].avatar {
-    position: relative; /* Parent element needs relative positioning */
+    position: relative;
 }
 
 a[href="/user/lewka/"].avatar::before {
     content: '';
-    position: absolute; /* Overlay positioned absolutely within parent */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url('https://i.imgur.com/Ov2fzoc.gif') !important;
-    background-size: cover; /* Ensure the overlay image covers the avatar area */
+    background-size: cover; 
     background-position: center;
-    opacity: 1; /* Full opacity for overlay initially */
-    transition: opacity 0.15s ease; /* Smooth transition on hover */
-    z-index: 1; /* Ensure the overlay is above the avatar */
-    pointer-events: none; /* Prevent overlay from blocking hover actions */
+    opacity: 1;
+    transition: opacity 0.15s ease;
+    z-index: 1;
+    pointer-events: none;
 }
 
 a[href="/user/lewka/"].avatar:hover::before {
-    opacity: 0; /* Hide the overlay on hover */
+    opacity: 0;
 }
-/* Custom avatar for user 'Plestik' */
+
+/* Avatar for Plestik */
 a[href="/user/Plestik/"].avatar {
-    position: relative; /* Parent element needs relative positioning */
+    position: relative;
 }
 
 a[href="/user/Plestik/"].avatar::before {
     content: '';
-    position: absolute; /* Overlay positioned absolutely within parent */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url('https://i.imgur.com/DHrNsNH.png') !important;
-    background-size: cover; /* Ensure the overlay image covers the avatar area */
+    background-size: cover;
     background-position: center;
-    opacity: 1; /* Full opacity for overlay initially */
-    transition: opacity 0.15s ease; /* Smooth transition on hover */
-    z-index: 1; /* Ensure the overlay is above the avatar */
-    pointer-events: none; /* Prevent overlay from blocking hover actions */
+    opacity: 1;
+    transition: opacity 0.15s ease;
+    z-index: 1;
+    pointer-events: none;
 }
 
 a[href="/user/Plestik/"].avatar:hover::before {
-    opacity: 0; /* Hide the overlay on hover */
+    opacity: 0;
 }
+/* Avatar for Pawec */
 a[href="/user/Pawec/"].avatar {
-    position: relative; /* Ensure pseudo-element can be positioned properly */
+    position: relative;
 }
 a[href="/user/Pawec/"].avatar::before {
     content: '';
@@ -595,16 +593,16 @@ a[href="/user/Pawec/"].avatar::before {
     width: 100%;
     height: 100%;
     background-image: url('https://ih1.redbubble.net/image.3074650218.4482/raf,360x360,075,t,fafafa:ca443f4786.jpg');
-    background-size: cover; /* Ensure the overlay image covers the avatar area */
+    background-size: cover;
     background-position: center;
-    opacity: 1; /* Initial opacity for transparency */
-    transition: opacity 0.15s ease; /* Smooth transition on hover */
-    z-index: 1; /* Place the overlay on top */
+    opacity: 1;
+    transition: opacity 0.15s ease;
+    z-index: 1;
 }
 a[href="/user/Pawec/"].avatar:hover::before {
-    opacity: 0; /* Hide the overlay on hover */
+    opacity: 0;
 }
-/* Apply position: relative to ensure the overlay is positioned relative to the specific avatar */
+
 .avatar[data-v-1cc2919e] {
     position: relative;
     max-width: 160px;
@@ -672,7 +670,7 @@ a[href="/user/Pawec/"].avatar:hover::before {
 .medialist.cards .entry-card .edit:hover {
     background-color: rgba(80, 0, 30, 0.9) !important;
 }
-/* Animation for fade-in effect when hovering */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -693,6 +691,7 @@ a[href="/user/Pawec/"].avatar:hover::before {
     border-color: rgba(80, 0, 30, 0.8);
 }
 
+ /* Pulsing animation -> Doesn't work lol */
 @keyframes pulseGlow {
     0%, 100% {
         box-shadow: 0 0 20px rgba(120, 200, 150, 0.7) !important,
@@ -700,9 +699,9 @@ a[href="/user/Pawec/"].avatar:hover::before {
                     0 0 60px rgba(120, 200, 150, 0.3) !important;
     }
     50% {
-        box-shadow: 0 0 60px rgba(120, 200, 150, 1) !important, /* Increased glow intensity */
-                    0 0 90px rgba(120, 200, 150, 0.9) !important, /* Larger and stronger glow */
-                    0 0 120px rgba(120, 200, 150, 0.9) !important; /* Even more pronounced */
+        box-shadow: 0 0 60px rgba(120, 200, 150, 1) !important,
+                    0 0 90px rgba(120, 200, 150, 0.9) !important,
+                    0 0 120px rgba(120, 200, 150, 0.9) !important;
     }
 }
 
@@ -711,8 +710,8 @@ a[href="/user/Pawec/"].avatar:hover::before {
     box-shadow: 0 0 20px rgba(120, 200, 150, 0.7) !important,
                 0 0 40px rgba(120, 200, 150, 0.5) !important,
                 0 0 60px rgba(120, 200, 150, 0.3) !important;
-    border-radius: 10px !important; /* Optional: smoothens the corners */
-    animation: pulseGlow 1s infinite alternate !important; /* Apply the pulsing animation */
+    border-radius: 10px !important;
+    animation: pulseGlow 1s infinite alternate !important;
 }
 
 .filter-group .group-header[data-v-170179fc] {
@@ -780,7 +779,7 @@ a[href="/user/Pawec/"].avatar:hover::before {
 .favourites-wrap[data-v-ddf96a3c]:hover {
     background-image: url('https://img1.picmix.com/output/stamp/normal/8/7/0/7/2107078_25565.gif');
     background-position: center;
-    background-color: transparent; /* Background color becomes transparent */
+    background-color: transparent;
 }
 .favourite[data-v-0317d914] {
     filter: hue-rotate(-20deg) saturate(85%) brightness(85%);
@@ -858,7 +857,6 @@ a[href="/user/Pawec/"].avatar:hover::before {
 }
 
 /*Overview*/
-/* Common hover background transitions for multiple components */
 .bar-chart-wrap[data-v-46edc0ca],
 .pie-chart[data-v-26dc9635],
 [data-v-72dc5b51] .horizontal-scroller {
@@ -875,12 +873,10 @@ a[href="/user/Pawec/"].avatar:hover::before {
     background-color: rgba(80, 0, 30, 0.8) !important;
 }
 
-/* X-Axis styles */
 .x-axis[data-v-3251fadf] {
      background: rgba(50, 30, 76, 0.85) !important;
 }
 
-/* Area and line chart styles */
 .area[data-v-84e71bc6] {
     fill: rgba(80, 0, 30, 0.1) !important;
     z-index: 1;
@@ -899,9 +895,6 @@ a[href="/user/Pawec/"].avatar:hover::before {
 .line-chart-wrap[data-v-84e71bc6] {
     background: transparent !important;
 }
-
-
-
 
 
 /* Media queries voor schermen breder dan 1650px */
@@ -958,10 +951,11 @@ a[href="/user/Pawec/"].avatar:hover::before {
         margin-right: 5px;
     }
 }
+
 /* Media queries voor schermen kleiner dan 768px */
 @media screen and (max-width: 768px) {
     body {
-        background-size: auto !important; /* Zorg dat de achtergrond zich aanpast op kleine schermen */
+        background-size: auto !important;
     }
     .banner:not(.review-card > .banner) {
         height: 200px !important;
@@ -999,8 +993,8 @@ a[href="/user/Pawec/"].avatar:hover::before {
 /* For medium screens (between 768px and 1540px) */
 @media screen and (max-width: 1540px) and (min-width: 768px) {
     .overview[data-v-5c30286e] {
-        grid-template-columns: 1fr 1fr !important; /* Equal columns for medium screens */
-        grid-column-gap: 200px; /* Adjust gap for medium screens */
+        grid-template-columns: 1fr 1fr !important;
+        grid-column-gap: 200px;
         justify-items: center !important;
     }
 }
@@ -1008,7 +1002,7 @@ a[href="/user/Pawec/"].avatar:hover::before {
 /* For small screens (below 768px) */
 @media screen and (max-width: 768px) {
     .overview[data-v-5c30286e] {
-        grid-template-columns: 1fr !important; /* Single column for small screens */
+        grid-template-columns: 1fr !important;
         grid-column-gap: 10px;
     }
 }
