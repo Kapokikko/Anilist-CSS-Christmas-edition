@@ -65,6 +65,32 @@ body::before {
 .favourite[style*="https://s4.anilist.co/file/anilistcdn/character/large/b149594-BuEcMmYcFkIX.png"]:hover::before {
     opacity: 1;
 }
+/* 1e favourite image */
+img[src="https://anilist.co/anime/127976/Heaven-Officials-Blessing-Season-2/"] {
+    display: none; /* Hide the original image */
+}
+
+a[href="/anime/127976/Heaven-Officials-Blessing-Season-2/"] {
+    background-image: url("https://i.imgur.com/31STIf5.png") !important; /* Replace the background image */
+}
+
+/* 2e favourite image */
+img[src="https://anilist.co/anime/126356/Heaven-Officials-Blessing-Special-Episode/"] {
+    display: none; /* Hide the original image */
+}
+
+a[href="/anime/126356/Heaven-Officials-Blessing-Special-Episode/"] {
+    background-image: url("https://i.imgur.com/rjhPSw8.png") !important; /* Replace the background image */
+}
+
+/* 3e favourite image */
+img[src="https://anilist.co/anime/113260/Heaven-Officials-Blessing/"] {
+    display: none; /* Hide the original image */
+}
+
+a[href="/anime/113260/Heaven-Officials-Blessing/"] {
+    background-image: url("https://i.imgur.com/i2b34b9.png") !important; /* Replace the background image */
+}
 
 * {
     scrollbar-color: rgb(85, 65, 125);
@@ -376,14 +402,47 @@ h2 {
 
 .banner-content[data-v-1cc2919e] {
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     opacity: 1;
+    overflow: hidden;
+    height: 160px;
+    transition: height 0.8s ease, opacity 1s ease;
+    position: relative;
 }
+
+.banner-content[data-v-1cc2919e]:hover {
+    height: 240px;
+}
+
+.banner-content[data-v-1cc2919e] > * {
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.banner-content[data-v-1cc2919e] .avatar[data-v-1cc2919e],
+.banner-content[data-v-1cc2919e] .name-wrapper[data-v-1cc2919e] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner-content[data-v-1cc2919e] .follower-badge[data-v-1cc2919e],
+.banner-content[data-v-1cc2919e] .nav-btn[data-v-1cc2919e] {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.banner-content[data-v-1cc2919e]:hover .follower-badge[data-v-1cc2919e],
+.banner-content[data-v-1cc2919e]:hover .nav-btn[data-v-1cc2919e] {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
 .banner .container[data-v-1cc2919e] {
     margin-top 45px;
 }
