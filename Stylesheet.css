@@ -402,15 +402,13 @@ h2 {
 
 .banner-content[data-v-1cc2919e] {
     display: flex;
-    flex-wrap: nowrap;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     opacity: 1;
-    overflow: hidden;
-    height: 160px;
-    transition: height 0.8s ease, opacity 1s ease;
-    position: relative;
 }
 
 .banner-content[data-v-1cc2919e]:hover {
@@ -970,45 +968,58 @@ a[href="/user/Pawec/"].avatar:hover::before {
    }
 }
 @media screen and (max-width: 1540px) and (min-width: 768px) {
+ .banner-content[data-v-1cc2919e] {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    opacity: 1;
+    overflow: hidden;
+    height: 160px;
+    transition: height 0.8s ease, opacity 1s ease;
+    position: relative;
+ }
  .banner:not(.review-card > .banner) {
     height: 300px !important;
     transition: height 1.5s ease-in-out;
-}
-.avatar[data-v-1cc2919e] {
+ }
+ .avatar[data-v-1cc2919e] {
     max-height: 125px;
     max-width: 125px;
-}
-.name-wrapper[data-v-1cc2919e] {
+ }
+ .name-wrapper[data-v-1cc2919e] {
     padding: 7px 25px;
     transition: padding 1.5s ease-in-out;
-}
-.actions[data-v-1cc2919e] {
+ }
+ .actions[data-v-1cc2919e] {
     padding-top: 7px;
     transition: padding 1.5s ease-in-out;
-}
-.container{
+ }
+ .container{
      padding-left: 0px;
      padding-right: 0px;
-}
-    .overview[data-v-5c30286e] {
-        grid-template-columns: 1fr 1fr !important;
-        grid-column-gap: 200px;
-        transition: height 1s ease-in-out;
-    }
-    .section{
-    max-width: 450px;
-}
-    .favourites-wrap {
-        padding: 10px !important;
-    }
-    .nav-wrap {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-wrap .link {
-        width: 50px;
-        margin-right: 5px;
-    }
+ }
+ .overview[data-v-5c30286e] {
+     grid-template-columns: 1fr 1fr !important;
+     grid-column-gap: 200px;
+     transition: height 1s ease-in-out;
+     justify-items: center !important;
+ }
+ .section{
+     max-width: 450px;
+ }
+ .favourites-wrap {
+     padding: 10px !important;
+ }
+ .nav-wrap {
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ .nav-wrap .link {
+     width: 50px;
+     margin-right: 5px;
+ }
 }
 
 /* Media queries voor schermen kleiner dan 768px */
@@ -1038,30 +1049,5 @@ a[href="/user/Pawec/"].avatar:hover::before {
     }
     .banner-content[data-v-1cc2919e] {
         margin-top: 20px;
-    }
-}
-
-/* For large screens (above 1650px) */
-@media screen and (min-width: 1650px) {
-    .overview[data-v-5c30286e] {
-        grid-template-columns: 470px 700px !important;
-        grid-column-gap: 300px;
-    }
-}
-
-/* For medium screens (between 768px and 1540px) */
-@media screen and (max-width: 1540px) and (min-width: 768px) {
-    .overview[data-v-5c30286e] {
-        grid-template-columns: 1fr 1fr !important;
-        grid-column-gap: 200px;
-        justify-items: center !important;
-    }
-}
-
-/* For small screens (below 768px) */
-@media screen and (max-width: 768px) {
-    .overview[data-v-5c30286e] {
-        grid-template-columns: 1fr !important;
-        grid-column-gap: 10px;
     }
 }
