@@ -969,14 +969,10 @@ a[href="/user/Pawec/"].avatar:hover::before {
 }
 @media screen and (max-width: 1540px) and (min-width: 768px) {
  .banner-content[data-v-1cc2919e] {
-    display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: flex-start;
-    flex-direction: column;
-    opacity: 1;
     overflow: hidden;
-    height: 160px;
+    height: 175px;
     transition: height 0.8s ease, opacity 1s ease;
     position: relative;
  }
@@ -1002,6 +998,7 @@ a[href="/user/Pawec/"].avatar:hover::before {
  }
  .overview[data-v-5c30286e] {
      grid-column-gap: 94px;
+     margin-top: 54px;
      transition: height 1s ease-in-out;
      justify-items: center !important;
  }
