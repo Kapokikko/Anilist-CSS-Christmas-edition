@@ -67,29 +67,29 @@ body::before {
 }
 /* 1e favourite image */
 img[src="https://anilist.co/anime/127976/Heaven-Officials-Blessing-Season-2/"] {
-    display: none; /* Hide the original image */
+    display: none;
 }
 
 a[href="/anime/127976/Heaven-Officials-Blessing-Season-2/"] {
-    background-image: url("https://i.imgur.com/31STIf5.png") !important; /* Replace the background image */
+    background-image: url("https://i.imgur.com/31STIf5.png") !important;
 }
 
 /* 2e favourite image */
 img[src="https://anilist.co/anime/126356/Heaven-Officials-Blessing-Special-Episode/"] {
-    display: none; /* Hide the original image */
+    display: none;
 }
 
 a[href="/anime/126356/Heaven-Officials-Blessing-Special-Episode/"] {
-    background-image: url("https://i.imgur.com/rjhPSw8.png") !important; /* Replace the background image */
+    background-image: url("https://i.imgur.com/rjhPSw8.png") !important;
 }
 
 /* 3e favourite image */
 img[src="https://anilist.co/anime/113260/Heaven-Officials-Blessing/"] {
-    display: none; /* Hide the original image */
+    display: none;
 }
 
 a[href="/anime/113260/Heaven-Officials-Blessing/"] {
-    background-image: url("https://i.imgur.com/i2b34b9.png") !important; /* Replace the background image */
+    background-image: url("https://i.imgur.com/i2b34b9.png") !important;
 }
 
 * {
@@ -601,7 +601,7 @@ a[href="/user/lewka/"].avatar::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://i.imgur.com/Ov2fzoc.gif') !important;
+    background-image: url('https://cdn3.emoji.gg/emojis/2683-christmas-catbonk.gif') !important; /*https://i.imgur.com/Ov2fzoc.gif */
     background-size: cover; 
     background-position: center;
     opacity: 1;
@@ -626,7 +626,7 @@ a[href="/user/Plestik/"].avatar::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://i.imgur.com/DHrNsNH.png') !important;
+    background-image: url('https://i.imgur.com/NOBfl0L.png') !important; /* https://i.imgur.com/DHrNsNH.png */
     background-size: cover;
     background-position: center;
     opacity: 1;
@@ -649,7 +649,7 @@ a[href="/user/Pawec/"].avatar::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://ih1.redbubble.net/image.3074650218.4482/raf,360x360,075,t,fafafa:ca443f4786.jpg');
+    background-image: url('https://img.freepik.com/premium-vector/santa-claus-is-holding-finger-up-his-mouth-santa-claus-shushing-viewer-with-playful-ex_851674-93694.jpg?w=360'); /* https://ih1.redbubble.net/image.3074650218.4482/raf,360x360,075,t,fafafa:ca443f4786.jpg*/
     background-size: cover;
     background-position: center;
     opacity: 1;
