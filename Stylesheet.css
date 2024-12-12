@@ -981,7 +981,7 @@ a[href="/user/Pawec/"].avatar:hover::before {
     position: relative;
  }
  .banner:not(.review-card > .banner) {
-    height: 258px !important;
+    height: 295px !important;
     transition: height 1.5s ease-in-out;
  }
  .avatar[data-v-1cc2919e] {
