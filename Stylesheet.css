@@ -1001,11 +1001,13 @@ a[href="/user/Pawec/"].avatar:hover::before {
      padding-right: 0px;
  }
  .overview[data-v-5c30286e] {
-     grid-template-columns: 1fr 1fr !important;
-     grid-column-gap: 200px;
+     grid-column-gap: 94px;
      transition: height 1s ease-in-out;
      justify-items: center !important;
  }
+.user .overview {
+    grid-template-columns: 470px auto !important;
+}
  .section{
      max-width: 450px;
  }
