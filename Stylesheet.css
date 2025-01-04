@@ -1,3 +1,53 @@
+/*
+IN THE CSS BOX ON ANILIST
+
+.footer[data-v-0165744a] {
+    background: linear-gradient(rgba(50, 30, 76, 0.7), rgba(50, 30, 76, 0.7)), 
+                url('https://clipart-library.com/images_k/snow-pile-transparent/snow-pile-transparent-14.png') no-repeat bottom center;
+    background-size: cover;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer[data-v-0165744a]:hover {
+    background: linear-gradient(rgba(50, 30, 76, 0.8), rgba(50, 30, 76, 0.8)), 
+                url('https://clipart-library.com/images_k/snow-pile-transparent/snow-pile-transparent-14.png') no-repeat bottom center;
+    background-size: cover;
+}
+
+.theme-selector h2 { 
+    color: rgb(78 1 31);
+    text-shadow: 1px 1px 3px rgba(240, 180, 170, 0.8);
+}
+/*.about .content-wrap[data-v-5c30286e]{
+    background: linear-gradient(rgba(50, 30, 76, 0.7), rgba(50, 30, 76, 0.7)), 
+                url('https://img1.picmix.com/output/stamp/normal/2/7/7/4/2384772_2202b.gif') no-repeat bottom center;
+    background-size: cover;
+    transition: background 0.3s ease-in-out;
+}
+.about .content-wrap[data-v-5c30286e]:hover{
+    background: linear-gradient(rgba(50, 30, 76, 0.85), rgba(50, 30, 76, 0.85)), 
+                url('https://clipart-library.com/images_k/snow-pile-transparent/snow-pile-transparent-14.png') no-repeat bottom center;
+    background-size: cover;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/*kerst krans rond userprofile
+
+.user-wrap .avatar::before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 40px;
+    background: url('https://i.imgur.com/MqUdqYB.gif') no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 10; 
+}
+*/
+
 body {
     position: relative;
     background-color: transparent !important;
