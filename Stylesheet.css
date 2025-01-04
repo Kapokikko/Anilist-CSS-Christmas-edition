@@ -415,7 +415,10 @@ h2 {
 .banner-content[data-v-1cc2919e]:hover {
     height: 320px;
 }
-
+.banner:not(.review-card > .banner) {
+    height: 350px !important;
+    transition: height 1.5s ease-in-out;
+}
 .banner-content[data-v-1cc2919e] > * {
     transition: opacity 0.5s ease, transform 0.5s ease; 
 }
