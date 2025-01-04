@@ -401,18 +401,19 @@ h2 {
 }
 
 .banner-content[data-v-1cc2919e] {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
+    height: 230px;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     opacity: 1;
+    overflow: hidden;
+    position: relative;
+    transition: height O .8s ease, opacity 1s ease;
 }
 
 .banner-content[data-v-1cc2919e]:hover {
-    height: 240px;
+    height: 320px;
 }
 
 .banner-content[data-v-1cc2919e] > * {
